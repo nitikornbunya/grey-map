@@ -7,6 +7,7 @@
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
     <script src="https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.js"></script>
     <link href="https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://api.longdo.com/map/?key=3f33f729faa75c7d94d4b2c06b58cf82"></script>
     <style>
         body {
             margin: 0;
@@ -20,11 +21,10 @@
             width: 100%;
         }
     </style>
-    <script type="text/javascript" src="https://api.longdo.com/map/?key=[YOUR-KEY-API]"></script>
     <script>
         var map = undefined;
         function init() {
-            var map = new window.window.maplibregl.Map({
+            var map = new window.maplibregl.Map({
                 container: 'map',
                 style: {
                     "version": 8,
