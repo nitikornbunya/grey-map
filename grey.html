@@ -22,9 +22,9 @@
     </style>
     <script type="text/javascript" src="https://api.longdo.com/map/?key=[YOUR-KEY-API]"></script>
     <script>
-        var map
+        var map = undefined;
         function init() {
-            var map = new maplibregl.Map({
+            var map = new window.window.maplibregl.Map({
                 container: 'map',
                 style: {
                     "version": 8,
@@ -1343,7 +1343,7 @@
                     "id": "longdo_gray_+traffic"
                 },
             });
-            map.addControl(new maplibregl.NavigationControl());
+            map.addControl(new window.maplibregl.NavigationControl());
         }
     </script>
 </head>
