@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <title>Longdo Gray+Traffic</title>
@@ -21,9 +22,9 @@
     </style>
     <script type="text/javascript" src="https://api.longdo.com/map/?key=[YOUR-KEY-API]"></script>
     <script>
-
+        var map
         function init() {
-            const map = new window.maplibregl.Map({
+            var map = new window.maplibregl.Map({
                 container: 'map',
                 style: {
                     "version": 8,
@@ -1342,7 +1343,7 @@
                     "id": "longdo_gray_+traffic"
                 },
             });
-            map.addControl(new maplibregl.NavigationControl());
+            map.addControl(new window.maplibregl.NavigationControl());
         }
     </script>
 </head>
