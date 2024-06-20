@@ -24,7 +24,7 @@
     <script>
         var map
         function init() {
-            var map = new window.maplibregl.Map({
+            var map = new maplibregl.Map({
                 container: 'map',
                 style: {
                     "version": 8,
@@ -1343,7 +1343,7 @@
                     "id": "longdo_gray_+traffic"
                 },
             });
-            map.addControl(new window.maplibregl.NavigationControl());
+            map.addControl(new maplibregl.NavigationControl());
         }
     </script>
 </head>
